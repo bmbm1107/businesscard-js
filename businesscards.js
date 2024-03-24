@@ -1,4 +1,4 @@
-﻿let allCard = document.querySelectorAll('.Nv2PK.THOPZb.CpccDe')
+﻿let allCard = document.querySelectorAll('.Nv2PK.tH5CWc.THOPZb')
 let listOfCards = Array.from(allCard)
 let wait = 2500;
 let result = []
@@ -17,6 +17,20 @@ for (let card of listOfCards) {
 
         businessWebsite: (() => {
             if (document.querySelector("a[data-item-id='authority']")) { return document.querySelector("a[data-item-id='authority']").href }
+
+
+        })(),
+
+        
+        businessCategory: (() => {
+            if (document.querySelector("button.DkEaL")) { return document.querySelector("button.DkEaL").innerText }
+
+
+        })(),
+
+
+        businessPhone: (() => {
+            if (document.querySelector("button[data-item-id*=phone]")) { return document.querySelector("button[data-item-id*=phone]").attributes[3].value.slice(10) }
 
 
         })(),
