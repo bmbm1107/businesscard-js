@@ -1,4 +1,4 @@
-﻿let allCard = document.querySelectorAll('.Nv2PK.tH5CWc.THOPZb')
+﻿let allCard = document.querySelectorAll('.Nv2PK.THOPZb.CpccDe')
 let listOfCards = Array.from(allCard)
 let wait = 2500;
 let result = []
@@ -34,6 +34,16 @@ for (let card of listOfCards) {
 
 
         })(),
+
+
+        businessPic: (() => {
+            if (document.querySelector('button[jsaction*=heroHeaderImage]')) { return  document.querySelector('button[jsaction*=heroHeaderImage]').children[0].src }
+
+
+        })(),
+
+       
+
 
     }
 
